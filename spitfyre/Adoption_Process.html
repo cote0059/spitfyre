@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adoption Process</title>
+    <style>
+        .container {
+            width: 1180px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28pt;
+            color: #444444;
+            font-family: "Nunito Sans", sans-serif;
+            position: relative;
+            padding-top: 25px;
+            padding-left: 100px;
+        }
+
+        h2 {
+            font-size: 24pt;
+        }
+
+        h3 {
+            font-size: 18pt;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Nunito Sans, sans-serif;
+        }
+
+        p {
+            font-size: 12pt;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            display: inline;
+            font-size: 12pt;
+            padding: 8px;
+            color: black;
+        }
+
+        .logo {
+            float: left;
+            padding-left: 20px;
+            margin-top: -20px;
+            padding-bottom: 10px;
+        }
+        nav {
+            text-align: right;
+            padding-top: 35px;
+            padding-bottom: 20px;
+            position: relative;
+            display: block;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: dimgrey;
+        }
+
+        a:hover {
+            text-decoration: none;
+            background-color: #ffffff;
+            color: black;
+        }
+
+        li a {
+            color: dimgrey;
+            text-align: center;
+            padding: 20px 10px;
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: black;
+        }
+
+        .page-banner {
+            position: relative;
+            width: 1180px;
+            height: 100px;
+            background-color: #ffcc68;
+        }
+
+        .circle {
+            border-radius: 50%;
+            background-color: #ffcc68;
+            height: 80px;
+            width: 80px;
+            text-align: center;
+        }
+
+        .one {
+            padding-top: 17px;
+        }
+
+        .two {
+            padding-top: 17px;
+        }
+
+        .three {
+            padding-top: 17px;
+        }
+
+        .four {
+            padding-top: 17px;
+        }
+
+        .five {
+            padding-top: 17px;
+        }
+        .one-text {
+            height: 82px;
+            width: 380px;
+            position: absolute;
+            padding-left: 120px;
+            padding-top: 10px
+        }
+        .two-text {
+            height: 82px;
+            width: 380px;
+            position: absolute;
+            padding-left: 120px;
+            padding-top: 28px
+        }
+        .three-text {
+            height: 82px;
+            width: 380px;
+            position: absolute;
+            padding-left: 120px;
+            padding-top: 36px
+        }
+        .four-text {
+            height: 82px;
+            width: 380px;
+            position: absolute;
+            padding-left: 120px;
+            padding-top: 28px
+        }
+        .five-text {
+            height: 82px;
+            width: 380px;
+            position: absolute;
+            padding-left: 120px;
+            padding-top: 28px
+        }
+
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+            width: 480px;
+            height: 400px;
+            position: absolute;
+            margin-left: 650px;
+            margin-top: 100px;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+        .dots {
+            position: absolute;
+            margin-top: 450px;
+            margin-left: 865px;
+        }
+        footer {
+            background-color: #515151;
+            margin-top: 100px;
+            height: 150px;
+            padding-top: 30px;
+            padding-left: 80px;
+            line-height: 14pt;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <nav>
+            <img class="logo" src="images/spitfyre-light-02.png" alt="logo">
+            <ul>
+                <li class="nav-item" style="color: white"><a href="index.html">Home</a></li>
+                <li class="nav-item" style="color: white"><a href="Adoption_Process.html">Adoption Process</a></li>
+                <li class="nav-item" style="color: white"><a href="available-pups.html">Available Pups</a></li>
+                <li class="nav-item" style="color: white"><a href="about.html">About Us</a></li>
+                <li class="nav-item" style="color: white"><a href="Shiba-Info.html">Shiba Info</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="page-banner">
+        <h1>Puppy Adoption Process</h1>
+    </div>
+
+
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="images/shiba-puppies.jpg" alt="slider-1" style="width:480px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/shiba-orange.jpg" alt="slider-2" style="width:480px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/shiba-walking.jpg" alt="slider-3" style="width:480px">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
+
+
+    <div class="one-text">
+        <p>Read the Lifetime Health Guarantee Contract and if you are having your puppy shipped, Review our Shipping
+            Page prior to putting down a deposit. Please ask any questions you may have.</p>
+    </div>
+
+    <div class="circle">
+        <h2 class="one">
+            1
+        </h2>
+    </div>
+
+    <div class="two-text">
+        <p>Fill out our Puppy Application. We will get back to you within 24 hours.</p>
+    </div>
+
+
+    <div class="circle">
+        <h2 class="two">
+            2
+        </h2>
+    </div>
+
+    <div class="three-text">
+        <p>Once approved, submit a deposit with <a href="https://www.spitfyreshiba.com/puppy-application.html">this contract</a>.</p>
+    </div>
+
+    <div class="circle">
+        <h2 class="three">
+            3
+        </h2>
+    </div>
+
+    <div class="four-text">
+        <p>Fill out, sign, and submit the <a href="https://www.spitfyreshiba.com/assets/2-puppy-contract.pdf">Lifetime Health Guarantee Contract</a>.</p>
+    </div>
+
+    <div class="circle">
+        <h2 class="four">
+            4
+        </h2>
+    </div>
+
+    <div class="five-text">
+        <p>Call or email us to set up a day and time to visit the pups and pick out your forever friend!</p>
+    </div>
+
+    <div class="circle">
+        <h2 class="five">
+            5
+        </h2>
+    </div>
+    <footer>
+        <div>
+            <h2 style="color: white">Contact Us</h2>
+            <h4 style="color: white; font-size: 12pt; font-weight: lighter">218-652-4141<br>
+                pinek@digitaljam.com</h4>
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+
+
+</div>
+</body>
+</html>
